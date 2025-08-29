@@ -21,7 +21,7 @@ class AgentState(TypedDict):
 # --------------------------------- Tools ---------------------------------------
 @tool(return_direct=True)
 def get_this_year_tool() -> int:
-    """Получить текущий год"""
+    """Получить текущий год."""
     return datetime.datetime.now().year
 
 class WikiInput(BaseModel):
@@ -77,7 +77,7 @@ with open("./04_LLM_AGENTS/08_langgraph.png", "wb") as f:
 
 # ------------------------ Graph Invoke ---------------------------------
 inputs = {
-    "messages": [("user", "Сколько лет прошло с появления передачи Поле чудес в эфире? Кто её ведущий сегодня?")],
+    "messages": [("user", "Получи текущий год и вычисли сколько лет передаче Поле чудес? Кто её ведущий сегодня?")],
     "number_of_steps": 0
     }
 state = graph.invoke(inputs)

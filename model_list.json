@@ -1,6 +1,23 @@
 {
   "models": [
     {
+      "name": "gpt-oss:latest",
+      "model": "gpt-oss:latest",
+      "modified_at": "2025-08-27T12:56:53.290959823Z",
+      "size": 13780173724,
+      "digest": "aa4295ac10c3afb60e6d711289fc6896f5aef82258997b9efdaed6d0cc4cd8b8",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gptoss",
+        "families": [
+          "gptoss"
+        ],
+        "parameter_size": "20.9B",
+        "quantization_level": "MXFP4"
+      }
+    },
+    {
       "name": "llama3.1:8b",
       "model": "llama3.1:8b",
       "modified_at": "2025-08-14T13:53:36.453977852Z",
